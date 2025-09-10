@@ -1,1 +1,196 @@
 # finale
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OG MART - Clothing Store</title>
+
+  <!-- Google Fonts: Storm Gust alternative (if custom font not available) -->
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background: black;
+      border-bottom: 2px solid #FF2400;
+    }
+
+    header h1 {
+      font-family: 'Black Ops One', cursive; /* Storm Gust can be replaced here */
+      color: #FF2400;
+      font-size: 3rem;
+      margin: 0;
+      text-shadow: 2px 2px 10px #FF2400;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #111;
+      padding: 10px;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #FF2400;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .dashboard {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #111;
+      border: 2px solid #FF2400;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 0px 20px #FF2400;
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+      text-align: center;
+    }
+
+    .card-content h3 {
+      color: #FF2400;
+      margin: 10px 0;
+    }
+
+    .price {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #fff;
+      background: #FF2400;
+      padding: 5px 10px;
+      border-radius: 6px;
+      display: inline-block;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      border-top: 2px solid #FF2400;
+      margin-top: 30px;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #FF2400;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: white;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>OG MART</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Hoodies</a>
+    <a href="#">T-Shirts</a>
+    <a href="#">Telugu Hero Specials</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <!-- Dashboard Products -->
+  <section class="dashboard">
+    <div class="card">
+      <img src="https://i.ibb.co/7b4szXy/hoodie1.jpg" alt="OG Hoodie">
+      <div class="card-content">
+        <h3>OG Movie Hoodie</h3>
+        <p class="price">₹999</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://i.ibb.co/ZJw1ytD/hoodie2.jpg" alt="Telugu Hero Hoodie">
+      <div class="card-content">
+        <h3>Telugu Hero Hoodie</h3>
+        <p class="price">₹1499</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://i.ibb.co/vY5rWyp/tshirt1.jpg" alt="OG T-Shirt">
+      <div class="card-content">
+        <h3>OG Movie T-Shirt</h3>
+        <p class="price">₹749</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://i.ibb.co/VHcSCLz/tshirt2.jpg" alt="Hero T-Shirt">
+      <div class="card-content">
+        <h3>Telugu Hero T-Shirt</h3>
+        <p class="price">₹1199</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 OG MART | All Rights Reserved</p>
+  </footer>
+
+  <!-- JavaScript (Basic Example) -->
+  <script>
+    document.querySelectorAll('.btn').forEach(button => {
+      button.addEventListener('click', () => {
+        alert("Product added to cart!");
+      });
+    });
+  </script>
+
+</body>
+</html>
